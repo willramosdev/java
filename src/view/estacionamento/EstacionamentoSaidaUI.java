@@ -56,7 +56,7 @@ public class EstacionamentoSaidaUI extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         OutputMinutoSaida = new javax.swing.JTextField();
         BotaoSair = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        botaoVoltar = new javax.swing.JButton();
         BotaoRegistraSaida = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         InputHora = new javax.swing.JTextField();
@@ -179,7 +179,12 @@ public class EstacionamentoSaidaUI extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("Voltar");
+        botaoVoltar.setText("Voltar");
+        botaoVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botaoVoltarActionPerformed(evt);
+            }
+        });
 
         BotaoRegistraSaida.setText("Registrar");
         BotaoRegistraSaida.addActionListener(new java.awt.event.ActionListener() {
@@ -221,7 +226,7 @@ public class EstacionamentoSaidaUI extends javax.swing.JFrame {
                         .addComponent(BotaoRegistraSaida))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton3)
+                        .addComponent(botaoVoltar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(BotaoSair)))
                 .addContainerGap())
@@ -247,7 +252,7 @@ public class EstacionamentoSaidaUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BotaoSair)
-                    .addComponent(jButton3))
+                    .addComponent(botaoVoltar))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -301,6 +306,10 @@ public class EstacionamentoSaidaUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BotaoCobrarActionPerformed
 
+    private void botaoVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoVoltarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botaoVoltarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -349,7 +358,7 @@ public class EstacionamentoSaidaUI extends javax.swing.JFrame {
     private javax.swing.JTextField OutputMinutoSaida;
     private javax.swing.JTextField OutputPlaca;
     private javax.swing.JTextField OutputValorDaCobranca;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton botaoVoltar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

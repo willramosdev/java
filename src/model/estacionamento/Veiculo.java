@@ -12,6 +12,7 @@ import dao.estacionamento.VeiculoDAO;
  * @author Will
  */
 public class Veiculo {
+    
     private String placa;
     private int horaEntrada;
     private int minutoEntrada;

@@ -6,6 +6,7 @@ package model.estacionamento;
  * @author Will
  */
 public class Estacionamento {
+    private int id;
     private int tolerancia = 15; //minutos
     private double valorMinimo = 1; //reais
     private int periodoDeTarifacao = 60; //minutos
@@ -36,7 +37,7 @@ public class Estacionamento {
     /**
      * @param valorMinimo the valorMinimo to set
      */
-    public void setValorMinimo(int valorMinimo) {
+    public void setValorMinimo(double valorMinimo) {
         this.valorMinimo = valorMinimo;
     }
 
@@ -64,7 +65,7 @@ public class Estacionamento {
     /**
      * @param valorPorPeriodo the valorPorPeriodo to set
      */
-    public void setValorPorPeriodo(int valorPorPeriodo) {
+    public void setValorPorPeriodo(double valorPorPeriodo) {
         this.valorPorPeriodo = valorPorPeriodo;
     }
 
@@ -80,5 +81,19 @@ public class Estacionamento {
      */
     public void setCaixa(double caixa) {
         this.caixa = caixa;
+    }
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
     }
 }
