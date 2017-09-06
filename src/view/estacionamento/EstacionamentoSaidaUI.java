@@ -67,7 +67,7 @@ public class EstacionamentoSaidaUI extends javax.swing.JFrame {
 
         jLabel1.setText("Placa do veículo:");
 
-        jLabel2.setText("Horario de siada:");
+        jLabel2.setText("Horario de saida:");
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Dados de cobrança"));
 
@@ -393,6 +393,18 @@ public class EstacionamentoSaidaUI extends javax.swing.JFrame {
         } else {
             EstacionamentoController ec = new EstacionamentoController();
             ec.realizaCobranca(this.currentObject.getPlaca(), this.valorDeCobranca);
+            limpaCampos();
         }
+    }
+    private void limpaCampos () {
+        InputPlaca.setText("");
+        InputMinuto.setText("");
+        InputHora.setText("");
+        OutputHora.setText("");
+        OutputHoraSaida.setText("");
+        OutputMinuto.setText("");
+        OutputValorDaCobranca.setText("");
+        OutputMinutoSaida.setText("");
+        OutputPlaca.setText("");
     }
 }
